@@ -1,0 +1,1 @@
+FROM tomcat:11-jdk21# Copy the WAR file to the webapps directory in TomcatCOPY myweatherapp.war /usr/local/tomcat/webapps/# Expose the port Tomcat will run on (default is 8080)EXPOSE 8080# Start Tomcat when the container runsCMD ["catalina.sh", "run"]
